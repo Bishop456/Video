@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Página web</title>
+<style>
+  body {
+    background: black;
+    color: crimson;
+    margin: 0;
+    padding: 0;
+  }
+  .video-container {
+    width: 800px;
+    height: 900px;
+    overflow: hidden;
+    margin: 50px auto;
+  }
+  video {
+    width: calc(100% + 60px);
+    height: calc(100% + 100px);
+    margin: -50px -30px;
+    object-fit: cover;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+<meta name="viewport" content="width=1200">
+</head>
+<body>
+<div class="video-container">
+  <video id="video" controls>
+    <source src="videos/leon.mp4" type="video/mp4">
+  </video>
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<img src="videos/jill1.jpg" height="900" width="800"/>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById("video");
+    video.play();
+  });
+</script>
+
+</body>
+</html>
+
